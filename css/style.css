@@ -21,7 +21,16 @@ header{
 .highlight{
     color: #FF008E;
 }
-
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    font-size: 40px;
+    border-bottom: 2px solid #FF008E;;
+    margin: 50px 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
 .primary-button{
     outline: 0;
     border: 0;
@@ -87,4 +96,38 @@ nav{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+
+/* Feature Part CSS */
+
+.feature-card{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.card{
+    width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0,0,0,0.2);
+}
+.card .card-icon{
+    background-color: #FF008E;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+.card h3{
+    color: #FF008E;
+    font-size: 25px;
+}
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card a{
+    text-decoration: none;
+    color: #FF008E;
 }
