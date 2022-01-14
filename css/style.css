@@ -7,18 +7,38 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 header{
-    height: 100vh;
     background-image: url('/images/cloud.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0,0,0,0.6);
     background-blend-mode: overlay;
-
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+}
+.highlight{
+    color: #FF008E;
+}
+
+.primary-button{
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg,#bd3580,#FF008E);
+    color: white;
+    font-weight: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 7px 0 #9b2164;
+    position: relative;
+    top: 0;
+}
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #9b2164;
 }
 nav>ul>li{
     display: inline;
@@ -34,6 +54,37 @@ nav>ul>li>a{
 nav{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: auto;
     align-items: center;
+}
+
+/* Banner */
+.banner{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-left h1{
+    font-size: 45px;
+    color: white;
+}
+.banner-left p{
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.banner-right img{
+    width: 100%;
+}
+.banner-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
