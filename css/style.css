@@ -168,9 +168,70 @@ nav{
     font:  'Montserrat', sans-serif;
 }
 footer{
+    margin-top: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
+}
+/* Nav Toggler */
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+/* Mobile Responsive */
+
+@media screen and (max-width:950px) {
+    .gallery-photo{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner-left{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .banner{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .feature-card, .gallery-photo, .contact-section{
+        grid-template-columns: 1fr;
+    }
+    .photo{
+        text-align: center;
+    }
+    .photo img{
+        max-width: 350px;
+    }
+    .banner-left{
+        order: 2;
+        padding: 50px 0;
+    }
+    .nav-toggler-icon{
+        display: none;
+    }
+    .nav-toggler:checked ~ nav{
+        transform: translateY(0);
+    }
+    .nav{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 20px 0;
+        transform: translateY(-330px);
+        transition: 0.3s ease;
+    }
+    .nav li{
+        color: #121212;
+    }
 }
